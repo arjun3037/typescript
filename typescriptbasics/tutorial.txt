@@ -1,0 +1,10 @@
+Core Types -
+    number - All number , no diff between integer and floats
+    String - All text value
+    boolean - true , false
+    object - {age:30}
+    array - ['string']
+    tuples - 
+==> TypeScripts type system only helps use during development(before the code compiled)
+==> JS uses dynamic types (resolved at runtime) but TS uses static types (resolved at development)
+==> the core primittive types in TS are all lower case  ex - 'string' and 'number'

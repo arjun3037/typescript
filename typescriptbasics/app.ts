@@ -1,27 +1,17 @@
-function mul(n1:number , n2 : number){
-    return n1 * n2;
+let userInput:unknown;
+let userName:string;
+
+userInput =5;
+userInput ='Max';
+
+//userName = userInput; we can't assign unknown to string 
+
+// thias function will never return anything
+function generateError(message:string, code:number) :never{
+    throw{message:message,errorCode:code};
 }
 
-function prints(){
-    console.log('Prints Value');
-}
+// infinite loop function also never return anything
 
-function addAmdHandle(n1:number , n2 : number , cb : (num : number) => void){
-    const result = n1 + n2 ;
-    cb(result);
-
-}
-
-let combinedMul : (a:number,b:number) => number;
-
-combinedMul = mul;
-//combinedMul = prints; we can't assign prints function to combinedMul function  because we have already defined the type of function which is differ;.
-
-//combinedMul = 7; we cannot assign any other value because its type is Function
-
-console.log(combinedMul(8,8));
-
-
-addAmdHandle(10,20 , (result) => {
-    console.log(result);
-});
+const result = generateError('An error occurred', 500);
+console.log(result);

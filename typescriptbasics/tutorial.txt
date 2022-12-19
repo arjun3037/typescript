@@ -4,7 +4,10 @@ Core Types -
     boolean - true , false
     object - {age:30}
     array - ['string']
-    tuples - 
+    tuples - added by TypeScript(it is not available in java script). Fixed-array length
+    ENUM - enum{NEW,OLD} Added by TS : automaticallyt enumerated global constant identifiers
+    Any - assign any type , we should avoid it to use.
 ==> TypeScripts type system only helps use during development(before the code compiled)
 ==> JS uses dynamic types (resolved at runtime) but TS uses static types (resolved at development)
 ==> the core primittive types in TS are all lower case  ex - 'string' and 'number'
+==> if we push elements in tuple then TS won't complain about it.
